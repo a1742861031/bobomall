@@ -7,7 +7,9 @@ import com.bobo.mall.entity.Product.PmsBrand;
 import com.bobo.mall.mapper.PmsBrandMapper;
 import com.bobo.mall.service.PmsBrandService;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * <p>
@@ -20,6 +22,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class PmsBrandServiceImpl extends ServiceImpl<PmsBrandMapper, PmsBrand> implements PmsBrandService {
 
+    @Autowired
+    private PmsBrandMapper pmsBrandMapper;
 
     @Override
     public void getBrands(Page<PmsBrand> pageParams, String brandName) {
@@ -30,5 +34,37 @@ public class PmsBrandServiceImpl extends ServiceImpl<PmsBrandMapper, PmsBrand> i
             wrapper.like("name", brandName);
         }
         baseMapper.selectPage(pageParams, wrapper);
+    }
+
+    @Override
+    public boolean updateById(PmsBrand pmsBrand) {
+        int effectedRow = baseMapper.updateById(pmsBrand);
+        return effectedRow > 0;
+    }
+
+    @Override
+    public boolean addBrands(PmsBrand pmsBrand) {
+        int effectedRow = baseMapper.insert(pmsBrand);
+        return effectedRow > 0;
+    }
+
+    @Override
+    public boolean deleteById(Long brandId) {
+        int effectedRow = baseMapper.deleteById(brandId);
+        return effectedRow > 0;
+    }
+
+    @Override
+    public PmsBrand selectedById(Long brandId) {
+        return baseMapper.selectById(brandId);
+    }
+
+    @Override
+    @Transactional
+    public boolean editStatusByIds(Long[] ids, Integer status) {
+        for (Long id : ids) {
+            pmsBrandMapper.updateShowStatus(id, status);
+        }
+        return true;
     }
 }

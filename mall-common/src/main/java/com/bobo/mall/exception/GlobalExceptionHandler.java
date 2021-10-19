@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @Date 2021/10/15 20:27
  * @Created by bobo
  */
-@ControllerAdvice
+//@ControllerAdvice
 public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     @ResponseBody

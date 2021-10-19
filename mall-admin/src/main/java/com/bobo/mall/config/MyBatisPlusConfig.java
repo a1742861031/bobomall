@@ -31,11 +31,11 @@ public class MyBatisPlusConfig {
         performanceInterceptor.setFormat(true);
         return performanceInterceptor;
     }
-    //逻辑删除插件
-    @Bean
-    public ISqlInjector sqlInjector(){
-        return new LogicSqlInjector();
-    }
+//    //逻辑删除插件
+//    @Bean
+//    public ISqlInjector sqlInjector(){
+//        return new LogicSqlInjector();
+//    }
     //分页插件
     @Bean
     public PaginationInterceptor paginationInterceptor(){

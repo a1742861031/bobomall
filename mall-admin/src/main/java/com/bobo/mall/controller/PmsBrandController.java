@@ -6,14 +6,9 @@ import com.bobo.mall.entity.Product.PmsBrand;
 import com.bobo.mall.entity.R;
 import com.bobo.mall.service.PmsBrandService;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
@@ -32,11 +27,62 @@ public class PmsBrandController {
 
     //分页查询所有的品牌
     @GetMapping(value = {"/query/{current}/{limit}", "/query/{current}/{limit}/{brandName}"})
-    @ApiModelProperty("分页查询品牌")
+    @ApiOperation("分页查询品牌")
     public R queryBrand(@PathVariable long current, @PathVariable long limit, @PathVariable(required = false) String brandName) {
         Page<PmsBrand> brandPage = new Page<>(current, limit);
         pmsBrandService.getBrands(brandPage, brandName);
-        return R.ok().data("data",brandPage);
+        return R.ok().data("data", brandPage);
+    }
+
+    //修改品牌
+    @PutMapping()
+    @ApiOperation("修改品牌")
+    public R updateBrand(@RequestBody PmsBrand pmsBrand) {
+        boolean update = pmsBrandService.updateById(pmsBrand);
+        if (update) {
+            return R.ok();
+        } else {
+            return R.error();
+        }
+    }
+
+    @PostMapping()
+    @ApiOperation("新增品牌")
+    public R addBrands(@RequestBody PmsBrand pmsBrand) {
+        boolean add = pmsBrandService.addBrands(pmsBrand);
+        if (add) {
+            return R.ok();
+        } else {
+            return R.error();
+        }
+    }
+
+    @GetMapping("{brandId}")
+    @ApiOperation("根据id查询品牌")
+    public R selectedBrandById(@PathVariable Long brandId) {
+        PmsBrand pmsBrand = pmsBrandService.selectedById(brandId);
+        return R.ok().data("item", pmsBrand);
+    }
+
+    @DeleteMapping({"{brandId}"})
+    @ApiOperation("根据id删除品牌")
+    public R deleteBrand(@PathVariable Long brandId) {
+        boolean delete = pmsBrandService.deleteById(brandId);
+        if (delete) {
+            return R.ok();
+        } else {
+            return R.error();
+        }
+    }
+    @PostMapping("/editStatusByIds")
+    @ApiOperation("批量修改status")
+    public R editBrand(Long[] ids, int showStatus){
+        boolean updateStatus = pmsBrandService.editStatusByIds(ids, showStatus);
+        if (updateStatus) {
+            return R.ok();
+        } else {
+            return R.error();
+        }
     }
 }
 
