@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5a0f081-1cd3-4356-9821-073c4d93a510" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_10.xml" beforeDir="false" />
+    <list default="true" id="d5a0f081-1cd3-4356-9821-073c4d93a510" name="Changes" comment="10.19┭┮﹏┭┮">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/bobo/mall/config/MyBatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/bobo/mall/config/MyBatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/bobo/mall/controller/PmsBrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/bobo/mall/controller/PmsBrandController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/bobo/mall/mapper/PmsBrandMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/bobo/mall/mapper/PmsBrandMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/bobo/mall/service/PmsBrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/bobo/mall/service/PmsBrandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/bobo/mall/service/impl/PmsBrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/bobo/mall/service/impl/PmsBrandServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/resources/mapper/PmsBrandMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/mapper/PmsBrandMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/bobo/mall/config/MyBatisPlusConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/bobo/mall/config/MyBatisPlusConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/bobo/mall/controller/PmsBrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/bobo/mall/controller/PmsBrandController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/bobo/mall/mapper/PmsBrandMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/bobo/mall/mapper/PmsBrandMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/bobo/mall/service/PmsBrandService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/bobo/mall/service/PmsBrandService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/bobo/mall/service/impl/PmsBrandServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/bobo/mall/service/impl/PmsBrandServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/mapper/PmsBrandMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/mapper/PmsBrandMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/bobo/mall/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/bobo/mall/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/bobo/mall/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/classes/com/bobo/mall/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,8 +183,18 @@
       <workItem from="1634533254714" duration="8487000" />
       <workItem from="1634556753665" duration="2000" />
       <workItem from="1634637519868" duration="6666000" />
-      <workItem from="1634644339812" duration="1008000" />
+      <workItem from="1634644339812" duration="1316000" />
+      <workItem from="1634648676195" duration="1865000" />
+      <workItem from="1634707615385" duration="2980000" />
     </task>
+    <task id="LOCAL-00001" summary="10.19┭┮﹏┭┮">
+      <created>1634645608240</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634645608240</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,5 +211,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="10.19┭┮﹏┭┮" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.19┭┮﹏┭┮" />
   </component>
 </project>
